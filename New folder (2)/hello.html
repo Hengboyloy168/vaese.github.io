@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <style>
+    @keyframes charging {
+        100% {
+            background-size: 120% 100%;
+        }
+    }
+    .battery-charging{
+        width: 160px;
+        height: 80px;
+        margin: 45px;
+        border: 2px solid #ff6d00;
+        padding: 3px;
+        background: repeating-linear-gradient(
+            90deg,
+            #ff6d00 0 20px,
+            #0000 0 30px
+            )
+            left/0% 100% no-repeat content-box 
+            content-box;
+            position: relative;
+            animation: charging 2s infinite steps(6);
+    }
+   </style>
+    <title>Salow Studios</title>
+</head>
+<body>
+    <h1>Battery charging Animating</h1>
+    <div class="battery charging"></div>
+</body>
+</html>
